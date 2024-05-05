@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom File Upload</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .custom-file-input {
+            position: relative;
+        }
+
+        .input-file {
+            display: none;
+            /* Hide the default file input */
+        }
+
+        .file-box {
+            width: 200px;
+            height: 150px;
+            border: 2px dashed #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .plus-icon {
+            font-size: 48px;
+            color: #fff;
+            /* Set color to white */
+            background-color: #007bff;
+            /* Set background color to blue */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            /* Make it round */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .upload-text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Hover effect */
+        .file-box:hover {
+            border-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="custom-file-input">
+        <input type="file" id="fileInput" class="input-file">
+        <label for="fileInput">
+            <div class="file-box">
+                <span class="plus-icon">+</span>
+                <span class="upload-text">Upload File*</span>
+            </div>
+        </label>
+    </div>
+
+</body>
+
+</html>
