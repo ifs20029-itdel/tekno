@@ -16,10 +16,11 @@
   <title>
     DELCustomer Connect
   </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -29,58 +30,115 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
   <style>
-/* Additional Styles for Login Modal */
-.modal-content {
-  border-radius: 10px;
-}
+    /* Additional Styles for Login Modal */
+    .modal-content {
+      border-radius: 10px;
+    }
 
-.modal-header {
-  border-bottom: none;
-}
+    .modal-header {
+      border-bottom: none;
+    }
 
-.modal-title {
-  font-size: 24px;
-  font-weight: bold;
-}
+    .modal-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-.modal-body {
-  padding: 20px;
-}
+    .modal-body {
+      padding: 20px;
+    }
 
-.form-group {
-  margin-bottom: 20px;
-}
+    .form-group {
+      margin-bottom: 20px;
+    }
 
-.form-control {
-  border-radius: 5px;
-}
+    .form-control {
+      border-radius: 5px;
+    }
 
-.btn-primary {
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-}
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+    }
 
-.btn-primary:hover {
-  background-color: #0056b3;
-}
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
 
-.modal-footer {
-  border-top: none;
-  text-align: center;
-}
+    .modal-footer {
+      border-top: none;
+      text-align: center;
+    }
 
-.text-muted {
-  margin-top: 10px;
-}
+    .text-muted {
+      margin-top: 10px;
+    }
 
+    /*input file*/
+    .tambah-file {
+      display: flex;
+    }
+
+    .custom-file-upload {
+      display: inline-block;
+    }
+
+    .file-label {
+      cursor: pointer;
+    }
+
+    .upload-box {
+      width: 200px;
+      height: 150px;
+      border: 2px dashed #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .upload-box:hover {
+      border-color: #666;
+    }
+
+    .plus-icon {
+      font-size: 48px;
+      color: #fff;
+      /* Set color to white */
+      background-color: #007bff;
+      /* Set background color to blue */
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      /* Make it round */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .upload-box i {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .upload-text {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .inputfile {
+      display: none;
+    }
+
+    .keterangan {
+      padding: 20px 5em;
+    }
   </style>
 </head>
 
 <body>
-
-
-
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -90,20 +148,21 @@
             DELCustomer Connect
           </span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class=""></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  ">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Beranda 
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda
                 <span class="sr-only">(current)
-                  
+
                 </span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="pengaduan.html">
                 Pengaduan
               </a>
@@ -113,23 +172,18 @@
                 Kritik dan Saran
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registrasi.html">
-                Registrasi
-              </a>
-            </li>
           </ul>
-        <div class="user_option">
-          <a href="">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <span>
-              Login
-            </span>
-          </a>
+          <div class="user_option">
+            <a href="">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>
+                Login
+              </span>
+            </a>
             </button>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
       </nav>
     </header>
     <!-- end header section -->
@@ -149,46 +203,57 @@
     </div>
     <div class="container container-bg">
       <div class="row">
-        </div>
-        <div class="col-lg-12 col-md-6 px-0">
-          <form action="#">
-            <div>
-              <a>Nama</a>
-              <input type="text">
-            </div>
-            <div>
-              <a>Nim</a>
-              <input type="text">
-            </div>
-            <div>
-              <a>Nama Asrama</a>
-              <input type="text">
-            </div>
-            <div>
-              <a>Keterangan</a>
-              <input type="text" class="message-box">
-            </div>
-            <div class="custom-file-input">
-              <input type="file" id="fileInput" class="input-file">
-              <label for="fileInput">
-                  <div class="file-box">
-                      <span class="plus-icon">+</span>
-                      <span class="upload-text">Upload File*</span>
-                  </div>
-              </label>
+      </div>
+      <div class="col-lg-12 col-md-6 px-0">
+        <form action="#">
+          <div>
+            <a>Nama</a>
+            <input type="text">
           </div>
-            <div>
-              <button>
-                Kirim
-              </button>
+          <div>
+            <a>Nim</a>
+            <input type="text">
+          </div>
+          <div>
+            <a>Nama Asrama</a>
+            <input type="text">
+          </div>
+          <div>
+            <a>Keterangan</a>
+            <input type="text" class="message-box">
+          </div>
+          <!--  -->
+          <div class="tambah-file">
+            <div class="custom-file-upload">
+              <label for="fileInput" class="file-label">
+                Bukti
+                <div class="upload-box">
+                  <input type="file" id="fileInput" class="inputfile">
+                  <span class="plus-icon">+</span>
+                  <span class="upload-text">Upload File*</span>
+                </div>
+              </label>
             </div>
-        </div>
+            <div class="keterangan">
+              <em>Keterangan :</em>
+              <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button>
+              Kirim
+            </button>
+          </div>
       </div>
     </div>
+    </div>
   </section>
-
-
-
   <!-- end shop section -->
 
   <!-- info section -->
@@ -210,13 +275,14 @@
         </a>
       </div>
     </div>
-    <div class="info_container ">
+    <div class="info_container">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-6">
-            <img src="images/logo_del.png" alt="logo del" class="img-thumbnail"width="55"height="60">
+          <div class="col-4">
+            <img src="images/logo_del.png" alt="logo del" class="img-thumbnail" width="55" height="60"
+              style="background: none;">
             <h6>
-              LAUNDRY 
+              LAUNDRY
               INSTITUT TEKNOLOGI DEL
             </h6>
             <p>
@@ -224,7 +290,7 @@
               hingga maksimalkan feedback Laundry IT Del
             </p>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div class="col-8">
             <div class="info_form ">
               <h5>
                 Newsletter
@@ -237,23 +303,23 @@
               </form>
             </div>
           </div>
-          </div>
         </div>
       </div>
+    </div>
     </div>
     <!-- footer section -->
     <footer class=" footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> Copy Rights  By Kelompok 1
+          &copy; <span id="displayYear"></span> Copy Rights By Kelompok 1
         </p>
       </div>
     </footer>
     <!-- footer section -->
   </section>
 
-<!-- Search Modal -->
-<!-- <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <!-- Search Modal -->
+  <!-- <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -275,38 +341,39 @@
   </div>
 </div> -->
 
-<!-- Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" placeholder="Enter your username">
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter your password">
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Login</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <p class="text-muted">Don't have an account? <a href="#">Sign up</a></p>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="text-muted">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- end info section -->
-  
+
 
 
   <!-- <script src="js/jquery-3.4.1.min.js"></script>
@@ -338,7 +405,7 @@
       });
     });
   </script> -->
-  
+
 
 </body>
 
